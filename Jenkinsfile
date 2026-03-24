@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Replace with your Docker Hub username and image name
-        DOCKER_IMAGE = "test_docker_jenkins"
+        DOCKER_IMAGE = "sanjusci/test_docker_jenkins"
         DOCKER_CRED_ID = "docker-hub-credentials" // The ID from Jenkins Credentials
     }
 
