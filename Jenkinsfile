@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/sanjusci/test_docker_jenkins.git'
+                git branch: 'master', url: 'https://github.com/sanjusci/test_docker_jenkins.git'
             }
         }
 
