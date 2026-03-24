@@ -46,7 +46,7 @@ pipeline {
                 // Stop and remove old container, then run new one
                 sh "docker stop flask-app-container || true"
                 sh "docker rm flask-app-container || true"
-                sh "docker run -d --name flask-app-container -p 6001:6001 ${DOCKER_IMAGE}:latest"
+                sh "docker run -d --name flask-app-container -p 8080:5000 ${DOCKER_IMAGE}:latest"
             }
         }
     }
