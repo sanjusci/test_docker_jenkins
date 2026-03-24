@@ -14,6 +14,12 @@ pipeline {
             }
         }
 
+        stage('Verify Docker') {
+            steps {
+                sh 'docker ps'
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
                 script {
