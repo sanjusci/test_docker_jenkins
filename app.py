@@ -6,7 +6,7 @@ def hello_world():
     return '<h1>Hello, DevOps Engineer!</h1>'
 
 @app.route('/v1/hello')
-def hello_world():
+def hello_2():
     return '<h1>Hello, Software Engineer as Deops Engineer!</h1>'
 
 if __name__ == '__main__':
